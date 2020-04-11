@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HospitalManagementSystem.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <title> Hospital Management System</title>
+     <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>    
+    </head>
+<body>
+     <div id="container">
+       <form id="form1" runat="server">
+   
+       <table style="width:1100px; margin: 0 auto">
+           <%--First table row with two images at the top of the page.--%>
+           <tr style="width:1100px;height:50px;">
+               <td style="width:20px; text-align:right;">
+                   <img src="images/imagetwo.png"/>
+                   </td>
+               
+               <td style="width:1000px; text-align:center; background-color:white; color:red; font-size:30px; font-weight:bold; font-family: 'Times New Roman', Times, serif;"> Hospital Management System</td>
+                <td style="width:20px;">
+                   <%-- Resize image below with embedded CSS--%>
+                   <img src="images/imageone.png" style="width:74px; height:59px;"/>
+                </td>
+               </tr>
+           <%--Second table row with 3 icons on the left for Home, About Us and Contact Us.--%>
+           <tr style="width:1100px;height:40px; background-color:gray">
+               <td colspan="3">
+                   <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/home.png" OnClick="ImageButton1_Click" />
+                   <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/images/aboutusred.png" OnClick="ImageButton2_Click" />
+                   <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/images/contactus.png" OnClick="ImageButton3_Click" />
+               </td>
+               </tr>
+
+           <%--Third table row with Navigation Menu.--%>
+           <tr style="width:1200px;height:40px;">
+               <td colspan="3">
+                   <asp:Menu ID="Menu1" runat="server" ForeColor="Red" Orientation="Horizontal">
+                       <Items>
+                           <asp:MenuItem Text="New Patient" Value="Register New Patient" ImageUrl="~/images/register.png"  NavigateUrl="~/PatientRegistration.aspx" ></asp:MenuItem>
+                           <asp:MenuItem Text="Patient Information" Value="Patienet Information" ImageUrl="~/images/blankone.png" NavigateUrl="~/PatientInformation.aspx">
+                               <asp:MenuItem Text="Room Information" Value="Room Information" NavigateUrl="~/RoomInformation.aspx">
+                                   <asp:MenuItem Text="Patient Discharge" Value="Patient Discharge" NavigateUrl="~/PatientDischarge.aspx"></asp:MenuItem>
+                               </asp:MenuItem>
+                           </asp:MenuItem>
+                           <asp:MenuItem Text="Staff Information" Value="Staff Information" ImageUrl="~/images/blanktwo.png" NavigateUrl="~/StaffInformation.aspx"></asp:MenuItem>
+                           <asp:MenuItem Text="Search" Value="Search" ImageUrl="~/images/patient.png" NavigateUrl="~/PatientSearch.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="" Value="Search" ImageUrl="~/images/logout.png" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                      
+                       </Items>
+                       <StaticMenuItemStyle HorizontalPadding="20px" Font-Size="Medium" />
+                       <StaticSelectedStyle HorizontalPadding="30px" />
+                   </asp:Menu>
+               </td>
+             </tr>
+
+
+           <tr style="width:1100px">
+               <td colspan="3">
+               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+    </asp:ContentPlaceHolder> 
+                   </td>
+           </tr>
+
+          <%-- Table row for space under Place Holder.--%>
+           <tr style="width:1100px;height:20px">
+               <td colspan="3">
+
+                  </td>
+               </tr>
+       </table>
+              <div class="footer">
+                 <p style="font-family: 'Times New Roman', Times, serif; font-size: large">
+                &copy 2020 Hospital Management System. All rights reserved. </p>
+        </div>
+
+         <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+             </asp:ContentPlaceHolder>
+       
+    </form>
+   </div>
+</body>
+</html>

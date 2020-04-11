@@ -1,0 +1,109 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    /*background: url(images/whitebackground.png);*/
+    background-size: cover;
+    }
+
+
+h1 {
+    text-align: center;
+    color: red;
+    text-decoration:underline;  
+}
+
+
+.contact-form-info p {
+    float: left;
+    width: 370px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    border: 2px red solid;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 75px;
+    margin-top: 40px;
+    margin-left: 50px;
+    border-radius: 15px;
+    border-width: 3px;
+   }
+
+.div-maps-info {
+    /*float: left;*/
+    
+}
+
+.address h3 {
+
+    text-align: center;
+    font-family:monospace;
+    font-size:x-large;
+    margin-top: 130px;    
+
+}
+
+/*CSS for address*/
+.hms-one {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.hms-two {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.hms-three {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.hms-four {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+
+.banner-two img {
+    margin-left: 260px;
+    text-align: center;
+}
+
+.div-maps-info {
+    /*text-align: center;*/
+    border: 2px red solid;
+    font-size: medium;
+    word-spacing: 0.5em;
+    /*margin-top: 50px;*/
+    margin: 150px auto;
+    width: 700px;
+    /*height: 10%;*/
+    padding: 20px;
+    border-radius: 15px;
+    border-width: 3px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.div-maps iframe{
+    width: 700px;
+    margin-left: 450px;
+    height: 500px;
+    /*height: 200px;*/
+    /*margin-right: 220px;*/
+    /*margin: 50px auto;*/
+    /*border-radius: 15px;*/    
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: darkred;
+    text-align: center
+}
+

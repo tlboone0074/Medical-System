@@ -1,0 +1,220 @@
+﻿/*majority of these attributes are referenced on the "About" page. */
+
+body {
+    background-color: white;
+   
+}
+
+.marginspace {
+    margin-bottom: 300px;
+}
+
+h1{
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    width: 100%;
+    background-color: gray;                                                                                                                                                                                                                                                                                                   ;
+    color: darkred;
+    text-align: center; 
+                
+}
+  /*this references the "button" class on patient discharge page.  All buttons in the entire project is referenced from
+      this attribute below but is set in the properties window of every button control.
+  */ 
+ .button:hover{
+    background-color:white;
+     color: red;
+
+}
+
+.about {
+   float:left;
+    width: 42%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    border: 5px red dotted;   
+    padding-left: 30px;  
+    padding-right: 30px;
+}
+
+.about h2{
+    font-size:xx-large;
+    text-decoration: underline;
+   
+    }
+
+.mission {
+    float:left;
+    margin-left:70px;
+    width: 40%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    border: 5px red dotted;
+    /*same as above
+    border-right: 5px red dotted;
+    border-left: 5px red dotted;
+    border-top: 5px red dotted;
+    border-bottom: 5px red dotted;*/
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.mission h2 {
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+.imageone{
+   float:right;
+   margin-right: 50px;
+    width:45%;
+    height:30%;
+
+}
+/*this is the last attribute set to be refenenced on the "About" page.*/
+
+.imagetwo {
+   float:right;
+   margin-right: 152px;
+    width: 40%;
+   }
+
+/*----------------------------------------The attribute below references the "default" page------------------------------------*/
+.layout-one {
+    max-width: 1800px;
+    margin: 40px auto 0 auto;
+    line-height: 1.65;
+    padding: 20px 50px;
+    display: flex;
+     justify-content: space-between;
+}
+
+.column-one {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #c0dbe2; 
+    width: 30%;
+}
+
+.column-two {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #cdf1c3;  
+    width: 30%;
+}
+
+
+.column-three {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #ccb9da;  
+    width: 30%;
+}
+/*//////////////////////////////////The second row for the content of Default page//////////////////////////////////////////////////*/
+
+.layout-two {
+    max-width: 1800px;
+    margin: 40px auto 0 auto;
+    line-height: 1.65;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.column-four {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #c0dbe2;  
+    width: 30%;
+}
+
+.column-five {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #cdf1c3;   
+    width: 30%;
+}
+
+
+.column-six {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #ccb9da;   
+    width: 30%;
+   
+}
+/*--------------------------------Css properties for the patient registration page---------------------------------*/ 
+.patient-reg {
+    border: 1px red solid;
+    padding-top: 30px;
+    padding-left: 400px;
+    
+}
+
+
+
+
+/*--------------------------------Css properties for the patient information page---------------------------------*/
+
+.patient-info {
+    border: 1px red solid;
+    padding-top: 30px;
+    padding-left: 400px;
+}
+
+/*--------------------------------Css properties for the room information page---------------------------------*/
+
+.room-info {
+    border: 1px red solid;
+    padding-top: 15px;
+    padding-left: 250px;
+}
+
+
+/*--------------------------------Css properties for the patient discharge page---------------------------------*/
+
+.patient-dsg {
+    border: 1px red solid;
+    padding-top: 25px;
+    padding-left: 300px;
+}
+
+
+/*--------------------------------Css properties for the staff information page---------------------------------*/
+
+.staff-info {
+    border: 1px red solid;
+    padding-top: 25px;
+    padding-left: 200px;
+}
+
+/*--------------------------------Css properties for the patient search page-------------------------------------*/
+
+.patient-search {
+    border: 1px red solid;
+    padding-top: 25px;
+    padding-left: 315px;
+}
+
+
+
+
+
+
